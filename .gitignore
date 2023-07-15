@@ -1,0 +1,17 @@
+# Directories
+__pycache__/
+media/
+static/
+
+# Configuration files
+db.sqlite3
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment (if you're using one)
+venv/
+env/
+
+# Other project-specific files and directories
+.env
