@@ -23,6 +23,9 @@ DB_USER=YourDBUser
 DB_PASSWORD=YourDBPassword
 DB_HOST=YourDBHost
 DB_PORT=YourDBPort
+
+DEBUG=True
+SECRET_KEY=YourSecretKey
 ```
 5. Run ```python3 manage.py migrate``` to create the tables of the database.
 6. Run ```python3 manage.py createsuperuser``` command to create an admin user and follow the instructions on the console.
