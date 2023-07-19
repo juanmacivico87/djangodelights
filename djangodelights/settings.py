@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Register your apps here.
+    'inventory.apps.InventoryConfig'
 ]
 
 MIDDLEWARE = [
