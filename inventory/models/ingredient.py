@@ -5,3 +5,6 @@ class Ingredient(models.Model):
     quantity = models.PositiveIntegerField(default=0)
     unit = models.CharField(max_length=10)
     price_per_unit = models.FloatField(default=0.0)
+    
+    def __str__(self):
+        return self.name
