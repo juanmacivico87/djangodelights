@@ -1,3 +1,4 @@
+from django.core.exceptions import ValidationError
 from django.db import models
 
 class Ingredient(models.Model):
@@ -8,3 +9,10 @@ class Ingredient(models.Model):
     
     def __str__(self):
         return f'{self.name} ({self.quantity} {self.unit})'
+    
+    def clean(self):
+        if self.quantity < 0:
+            raise ValidationError('You cannot have an ingredient with an amount less than zero.')
+        
+        if self.price_per_unit < 0:
+            raise ValidationError('You cannot have an ingredient with a price per unit less than zero.')
