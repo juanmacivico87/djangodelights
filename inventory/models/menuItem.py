@@ -10,4 +10,4 @@ class MenuItem(models.Model):
     
     def clean(self):
         if self.price < 0:
-            raise ValidationError('You cannot have an menu item with a price less than zero.')
+            raise ValidationError('You cannot have a menu item with a price less than zero.')
