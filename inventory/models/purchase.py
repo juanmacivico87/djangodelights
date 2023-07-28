@@ -8,7 +8,7 @@ from inventory.models.menuItem import MenuItem
 class Purchase(models.Model):
     menu_item = models.ForeignKey(MenuItem, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    timestamp = models.DateTimeField(default=datetime.now)
+    timestamp = models.DateTimeField(default=datetime.now(timezone.get_default_timezone()))
     
     def __str__(self):
         return f'#{self.id}'
