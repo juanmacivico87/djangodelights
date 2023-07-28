@@ -11,3 +11,7 @@ class MenuItem(models.Model):
     def clean(self):
         if self.price < 0:
             raise ValidationError('You cannot have a menu item with a price less than zero.')
+        
+    class Meta:
+        verbose_name = 'Menu Item'
+        verbose_name_plural = 'Menu Items'

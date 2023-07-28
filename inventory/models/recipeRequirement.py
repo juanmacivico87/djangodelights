@@ -14,3 +14,7 @@ class RecipeRequirement(models.Model):
     def clean(self):
         if self.quantity < 0:
             raise ValidationError('You cannot have a recipe requirement with a quantity less than zero.')
+        
+    class Meta:
+        verbose_name = 'Recipe Requirement'
+        verbose_name_plural = 'Recipe Requirements'

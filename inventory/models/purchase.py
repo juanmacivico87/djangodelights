@@ -29,3 +29,7 @@ class Purchase(models.Model):
                 ingredient = item.ingredient.name
                 unit = item.ingredient.unit
                 raise ValidationError(f'To prepare {self.menu_item} you need {quantity} {unit} of {ingredient} and you only have {ingredient_quantity} {unit} in your inventory.')
+            
+    class Meta:
+        verbose_name = 'Purchase'
+        verbose_name_plural = 'Purchases'

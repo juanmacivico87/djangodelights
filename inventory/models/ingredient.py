@@ -16,3 +16,7 @@ class Ingredient(models.Model):
         
         if self.price_per_unit < 0:
             raise ValidationError('You cannot have an ingredient with a price per unit less than zero.')
+        
+    class Meta:
+        verbose_name = 'Ingredient'
+        verbose_name_plural = 'Ingredients'
