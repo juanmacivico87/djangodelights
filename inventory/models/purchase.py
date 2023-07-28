@@ -1,4 +1,3 @@
-from datetime import datetime
 from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
 from django.db import models
@@ -8,7 +7,7 @@ from inventory.models.menuItem import MenuItem
 class Purchase(models.Model):
     menu_item = models.ForeignKey(MenuItem, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    timestamp = models.DateTimeField(default=datetime.now(timezone.get_default_timezone()))
+    timestamp = models.DateTimeField(default=timezone.now)
     
     def __str__(self):
         return f'#{self.id}'
