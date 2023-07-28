@@ -32,6 +32,10 @@ SECRET_KEY=YourSecretKey
 7. Run ```python3 manage.py runserver``` command to start the project.
 8. Go to http://127.0.0.1:8000 from your favorite browser (if the port from which your application was launched is different, substitute that value in the URL).
 
+## Documentation
+
+See all the endpoints from which you can request information in the [documentation](documentation/readme.md).
+
 ## Informative note
 
 This is an Open Source project, so feel free to download, use and extend it as you wish.
