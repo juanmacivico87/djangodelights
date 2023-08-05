@@ -12,6 +12,11 @@ class Purchase(models.Model):
     def __str__(self):
         return f'#{self.id}'
     
+    def update_ingredients_quantities(self, recipe_requeriments):
+        for item in recipe_requeriments:
+            item.ingredient.quantity -= item.quantity
+            item.ingredient.save()
+    
     def clean(self):
         if self.timestamp > timezone.now():
             raise ValidationError('The date of purchase cannot exceed the current date.')
@@ -30,6 +35,8 @@ class Purchase(models.Model):
                 unit = item.ingredient.unit
                 raise ValidationError(f'To prepare {self.menu_item} you need {quantity} {unit} of {ingredient} and you only have {ingredient_quantity} {unit} in your inventory.')
             
+        self.update_ingredients_quantities(recipe_requeriments)
+
     class Meta:
         verbose_name = 'Purchase'
         verbose_name_plural = 'Purchases'
