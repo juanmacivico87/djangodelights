@@ -9,7 +9,7 @@ class RecipeRequirement(models.Model):
     quantity = models.FloatField(default=0.0)
     
     def __str__(self):
-        return f'{self.menu_item} - {self.ingredient}'
+        return f'#{self.id}'
     
     def clean(self):
         if self.quantity < 0:
