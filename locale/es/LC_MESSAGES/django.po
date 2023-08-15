@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-15 19:53+0200\n"
+"PO-Revision-Date: 2023-08-15 19:57+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.3.2\n"
+
+#: inventory/models/ingredient.py:6 inventory/models/ingredient.py:22
+#: inventory/models/recipeRequirement.py:9
+msgid "Ingredient"
+msgstr "Ingrediente"
+
+#: inventory/models/ingredient.py:7 inventory/models/recipeRequirement.py:10
+msgid "Quantity"
+msgstr "Cantidad"
+
+#: inventory/models/ingredient.py:8
+msgid "Unit"
+msgstr "Unidad"
+
+#: inventory/models/ingredient.py:9
+msgid "Price per Unit"
+msgstr "Precio por unidad"
+
+#: inventory/models/ingredient.py:16
+msgid "You cannot have an ingredient with an amount less than zero."
+msgstr "No puedes tener un ingrediente con una cantidad menor que cero."
+
+#: inventory/models/ingredient.py:19
+msgid "You cannot have an ingredient with a price per unit less than zero."
+msgstr ""
+"No puedes tener un ingrediente con un precio por unidad menor que cero."
+
+#: inventory/models/ingredient.py:23
+msgid "Ingredients"
+msgstr "Ingredientes"
+
+#: inventory/models/menuItem.py:6 inventory/models/menuItem.py:17
+#: inventory/models/purchase.py:9 inventory/models/recipeRequirement.py:8
+msgid "Menu Item"
+msgstr "Elemento del menú"
+
+#: inventory/models/menuItem.py:7
+msgid "Price"
+msgstr "Precio"
+
+#: inventory/models/menuItem.py:14
+msgid "You cannot have a menu item with a price less than zero."
+msgstr "No puedes tener un elemento en el menú con un precio menor que cero."
+
+#: inventory/models/menuItem.py:18
+msgid "Menu Items"
+msgstr "Elementos del menú"
+
+#: inventory/models/purchase.py:10
+msgid "User"
+msgstr "Usuario"
+
+#: inventory/models/purchase.py:11
+msgid "Date"
+msgstr "Fecha"
+
+#: inventory/models/purchase.py:23
+msgid "The date of purchase cannot exceed the current date."
+msgstr "La fecha de la compra no puede ser superior a la fecha actual."
+
+#: inventory/models/purchase.py:35
+#, python-format
+msgid ""
+"To prepare %(menu_item)s you need %(quantity)s %(unit)s of %(ingredient)s "
+"and you only have %(ingredient_quantity)s %(unit)s in your inventory."
+msgstr ""
+"Para preparar %(menu_item)s necesitas %(quantity)s %(unit)s de "
+"%(ingredient)s y solamente tienes %(ingredient_quantity)s %(unit)s en tu "
+"inventario."
+
+#: inventory/models/purchase.py:46
+msgid "Purchase"
+msgstr "Compra"
+
+#: inventory/models/purchase.py:47
+msgid "Purchases"
+msgstr "Compras"
+
+#: inventory/models/recipeRequirement.py:17
+msgid "You cannot have a recipe requirement with a quantity less than zero."
+msgstr ""
+"No puedes tener un requisito para una receta con una cantidad menor que cero."
+
+#: inventory/models/recipeRequirement.py:20
+msgid "Recipe Requirement"
+msgstr "Requisito para la receta"
+
+#: inventory/models/recipeRequirement.py:21
+msgid "Recipe Requirements"
+msgstr "Requisitos para las recetas"
+
+#~ msgid "Title"
+#~ msgstr "Título"
