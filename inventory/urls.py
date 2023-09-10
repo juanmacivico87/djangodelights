@@ -18,6 +18,6 @@ from django.urls import path
 from inventory.views.ingredient import Ingredient
 
 urlpatterns = [
-    path('ingredients/list/', Ingredient.get_all_ingredients, name='get_all_ingredients'),
-    path('ingredients/<int:id>/', Ingredient.get_ingredient, name='get_ingredient'),
+    path(Ingredient.list_path, Ingredient.as_view(), name='get_all_ingredients'),
+    path(Ingredient.single_path, Ingredient.as_view(), name='get_ingredient'),
 ]
