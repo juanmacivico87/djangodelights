@@ -1,4 +1,3 @@
-from django.http import JsonResponse
 from django.utils.translation import gettext as _
 from django.views import View
 from inventory.models.ingredient import Ingredient as IngredientModel
