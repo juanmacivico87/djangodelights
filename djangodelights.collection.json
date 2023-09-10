@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "7132915e-9566-44aa-8cc3-4a81e2eaad4a",
+		"name": "Django Delights",
+		"description": "This is a project developed in Python to build an API that will help  \nkeep track of how much food they have throughout the day in a  \nrestaurant.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6803032"
+	},
+	"item": [
+		{
+			"name": "Ingredients",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/ingredients/list/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"ingredients",
+								"list",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Single",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/ingredients/:id/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"ingredients",
+								":id",
+								""
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://127.0.0.1:8000",
+			"type": "string"
+		}
+	]
+}

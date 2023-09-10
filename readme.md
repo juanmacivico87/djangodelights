@@ -34,7 +34,7 @@ SECRET_KEY=YourSecretKey
 
 ## Documentation
 
-See all the endpoints from which you can request information in the [documentation](documentation/readme.md).
+If you want to see how the project works, you can import the [Postman collection attached to this repository](djangodelights.collection.json), see all the endpoints in it and run all the tests you need to see how it behaves.
 
 ## Informative note
 
