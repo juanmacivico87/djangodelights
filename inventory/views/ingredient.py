@@ -39,3 +39,9 @@ class Ingredient(View):
             return self.get_ingredient(id)
         
         return helpers.get_response(404, [], _('Error: Route not found'))
+    
+    def post(self, request):
+        if request.path_info == helpers.format_url(self.create_path, '', '', '/api'):
+            return helpers.get_response(200, [], 'OK')
+        
+        return helpers.get_response(404, [], _('Error: Route not found'))

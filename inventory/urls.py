@@ -26,6 +26,7 @@ urlpatterns = [
     path(Token.create_path, Token.as_view(), name='get_token'),
     path(Ingredient.list_path, Ingredient.as_view(), name='get_all_ingredients'),
     path(Ingredient.single_path, Ingredient.as_view(), name='get_ingredient'),
+    path(Ingredient.create_path, Ingredient.as_view(), name='create_ingredient'),
 ]
 
 django.conf.urls.handler404 = RouteNotFound.as_view()
