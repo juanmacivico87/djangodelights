@@ -17,9 +17,13 @@ Including another URLconf
 from django.urls import path
 from inventory.views.ingredient import Ingredient
 from inventory.views.routeNotFound import RouteNotFound
+from inventory.views.token import Token
+
 import django.conf.urls
 
+
 urlpatterns = [
+    path(Token.create_path, Token.as_view(), name='get_token'),
     path(Ingredient.list_path, Ingredient.as_view(), name='get_all_ingredients'),
     path(Ingredient.single_path, Ingredient.as_view(), name='get_ingredient'),
 ]
